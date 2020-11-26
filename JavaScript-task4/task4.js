@@ -22,44 +22,18 @@ arrCreate (12, 5, 100);
 
 // -3. створити функцію яка приймає три числа та виводить та повертає найменьше.
 function min (one, two, three) {
-    if (one < two && one < three) {
-        console.log (one);
-        return one;
-    } else {
-        if (two < one && two < three) {
-            console.log (two);
-            return two;
-        } else {
-            if (three < one && three < two) {
-                console.log (three);
-                return three;
-            };
-        };
-    } ;
-
+    return Math.min(one, two, three);
 };
 let minResult = min (3, 104, 19);
+console.log (minResult);
 
 // -4. створити функцію яка приймає три числа та виводить та повертає найбільше.
 
 function max (one, two, three) {
-    if (one > two && one > three) {
-        console.log (one);
-        return one
-    } else {
-        if (two > one && two > three) {
-            console.log (two);
-            return two;
-        } else {
-            if (three > one && three > two) {
-                console.log (three);
-                return three;
-            };
-        };
-    } ;
-
+    return Math.max (one, two, three);
 };
 let maxResult = max (3, 104, 19);
+console.log (maxResult)
 
 // -5. створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше
 function numbers () {
